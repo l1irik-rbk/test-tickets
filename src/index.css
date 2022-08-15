@@ -1,0 +1,122 @@
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f7fa;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
+
+.App__wrapper {
+  margin: 70px auto;
+  padding: 0 10px;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+label + label {
+  margin-top: 10px;
+}
+
+.filters {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-height: 150px;
+}
+
+.filters__tilte {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket + .ticket {
+  margin-top: 20px;
+}
+
+.ticket {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.ticket__wrapper {
+  display: flex;
+}
+
+.ticket__left-hand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  border-right: 1px solid #d2d5d6;
+}
+
+.ticket__title {
+  color: #25327f;
+  font-size: 40px;
+  margin: 0;
+}
+
+.ticket__right-hand {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.ticket__price {
+  color: #ffffff;
+  background-color: #ff8124;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: #ececec;
+}
+
+
+.departure__time, 
+.arrival__time {
+  font-size: 36px;
+}
+
+.departure__date,
+.arrival__date,
+.ticket__stop  {
+  color: #abb2b4;
+}
+
+.ticket__stop {
+  margin: auto 10px;
+  border-bottom: 2px solid #d2d5d6;
+  padding: 5px;
+}
