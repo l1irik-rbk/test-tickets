@@ -27,7 +27,7 @@ const Tickets = (): JSX.Element => {
       </div>
     );
   }
-  console.log(isTicketsLoaded);
+
   return (
     <div className="tickets">
       {isTicketsLoaded ? (
