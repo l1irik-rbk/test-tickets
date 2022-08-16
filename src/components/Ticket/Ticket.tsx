@@ -1,4 +1,8 @@
+import { getStopsText } from '../../utils/helpers';
+
 const Ticket = ({ ticket }: { ticket: TicketsInt }): JSX.Element => {
+  const stopsText = getStopsText(ticket.stops);
+
   return (
     <div className="ticket">
       <div className="ticket__wrapper">
@@ -15,7 +19,7 @@ const Ticket = ({ ticket }: { ticket: TicketsInt }): JSX.Element => {
             <p className="departure__date">{ticket.departure_date}</p>
           </div>
           <div className="ticket__stop">
-            <p>{ticket.stops} peresadka</p>
+            <p>{stopsText}</p>
           </div>
           <div className="ticket__arrival">
             <p className="arrival__time">{ticket.arrival_time}</p>

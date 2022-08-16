@@ -1,4 +1,4 @@
-import { STOPS } from '../../constants';
+import { STOPS } from '../../utils/constants';
 import Filter from '../Filter/Filter';
 
 const Filters = (): JSX.Element => {
