@@ -1,6 +1,8 @@
 import { STOPS } from '../../utils/constants';
 import Filter from '../Filter/Filter';
 
+import './Filters.scss';
+
 const Filters = (): JSX.Element => {
   return (
     <div className="filters">

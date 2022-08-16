@@ -1,6 +1,8 @@
 import Filters from './components/Filters/Filters';
 import Tickets from './components/Tickets/Tickets';
 
+import './App.scss';
+
 const App = (): JSX.Element => {
   return (
     <div className="App">

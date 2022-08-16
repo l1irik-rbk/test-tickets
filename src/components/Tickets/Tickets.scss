@@ -1,0 +1,9 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading,
+.error {
+  font-size: 20px;
+}

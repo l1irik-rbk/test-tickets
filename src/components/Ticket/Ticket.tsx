@@ -1,5 +1,7 @@
 import { getStopsText } from '../../utils/helpers';
 
+import './Ticket.scss';
+
 const Ticket = ({ ticket }: { ticket: TicketsInt }): JSX.Element => {
   const stopsText = getStopsText(ticket.stops);
 

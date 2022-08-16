@@ -23,11 +23,13 @@ export const appSlice = createSlice({
     setFilter: (state, action: PayloadAction<number>) => {
       if (!state.filters.includes(action.payload)) {
         state.filters.push(action.payload);
+        state.isTicketsLoaded = false;
       }
     },
     deleteFilter: (state, action: PayloadAction<number>) => {
       const elementIndex = state.filters.findIndex((element) => element === action.payload);
       state.filters.splice(elementIndex, 1);
+      state.isTicketsLoaded = false;
     },
   },
   extraReducers: (builder) => {
